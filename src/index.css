@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Beauty Spa Design System - Rose/Blush Palette */
+
+@layer base {
+  :root {
+    --background: 0 0% 99%;
+    --foreground: 280 20% 25%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 280 20% 25%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 280 20% 25%;
+
+    --primary: 340 60% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 15 70% 88%;
+    --secondary-foreground: 280 20% 30%;
+
+    --muted: 0 0% 92%;
+    --muted-foreground: 280 10% 50%;
+
+    --accent: 45 90% 58%;
+    --accent-foreground: 280 20% 25%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 280 15% 90%;
+    --input: 280 15% 90%;
+    --ring: 340 60% 50%;
+
+    --radius: 0.75rem;
+
+    --shadow-soft: 0 4px 20px -4px hsl(340 60% 50% / 0.1);
+    --shadow-medium: 0 8px 30px -6px hsl(340 60% 50% / 0.15);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+}
